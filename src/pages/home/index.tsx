@@ -8,7 +8,8 @@ const App: React.FC = () => {
     const c = await invoke('add', { a: 1, b: 2 })
     console.log('add', c)
     const res = await invoke('greet', { name: 'Tauri' })
-    console.log(res)
+    const value = await invoke('read_gpio', { pin: 12 })
+    console.log(res, value)
   }
 
   return (

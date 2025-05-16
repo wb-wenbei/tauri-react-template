@@ -10,6 +10,8 @@ fn main() {
         .invoke_handler(tauri::generate_handler![
             commands::greet,
             commands::add,
+            commands::read_gpio,
+            commands::write_gpio,
         ])
         .run(context)
         .expect("error while running Tauri application");

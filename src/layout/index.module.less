@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-color);
+
+  .header {
+    height: 46px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--sub-bg-color);
+    box-shadow: 0 1px 2px var(--white-10);
+    // position: sticky;
+    // top: 0;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 16px;
+    }
+  }
+
+  .content {
+    margin: 12px 24px;
+    padding: 16px;
+    flex: 1;
+    background: var(--sub-bg-color);
+    border-radius: 8px;
+  }
+}

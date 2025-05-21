@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.unit {
+  font-size: 13px;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+  color: aqua;
+}

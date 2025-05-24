@@ -33,7 +33,7 @@ const Toggle: React.FC<Props> = ({ defaultValue = '', value, options, onChange }
       <div
         className={styles.toggleSlider}
         style={{
-          transform: currentValue === 'light' ? 'translateX(0)' : 'translateX(56px)',
+          transform: currentValue === 'light' ? 'translateX(0)' : 'translateX(72px)',
         }}
       ></div>
 

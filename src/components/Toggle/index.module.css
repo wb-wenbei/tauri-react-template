@@ -3,7 +3,7 @@
   display: flex;
   background: #1e2a38;
   border-radius: 999px;
-  width: 112px;
+  width: 144px;
   height: 36px;
   box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 56px;
+  width: 72px;
   height: 34px;
   background: linear-gradient(to bottom, #2c3e50, #1e2a38);
   border-radius: 999px;

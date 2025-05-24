@@ -1,4 +1,5 @@
-import { Suspense, SVGProps } from 'react'
+import { Suspense } from 'react'
+import type { SVGProps } from 'react'
 import SVG from './svg'
 
 interface SvgWrapperProps {
@@ -9,7 +10,7 @@ interface SvgWrapperProps {
   onClick?: () => void
 }
 
-const SvgIcon: React.FC<SvgWrapperProps> = function ({ name, size, style, className, onClick }) {
+const SvgIcon: React.FC<SvgWrapperProps> = function ({ name, size = 14, style, className, onClick }) {
   const Icon = SVG[name]
   return (
     <span

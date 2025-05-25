@@ -1,17 +1,17 @@
 import React from 'react'
 import style from './index.module.less'
 import useSystemStore from '@/stores/system'
-// import SvgIcon from '@/components/Icon'
+import SvgIcon from '@/components/Icon'
 
 const App: React.FC = () => {
   const { deviceInfo } = useSystemStore()
-  const running = deviceInfo?.client?.Running
-  const time = deviceInfo?.client?.UpTime
+  const running = deviceInfo?.Running
+  const time = deviceInfo?.UpTime
 
   return (
     <div className={style.container}>
       <div className={style.status}>
-        {/* <SvgIcon name="running" /> */}
+        <SvgIcon name="running" />
         {running ? '设备正在运行' : '设备已停止'}
       </div>
       <div>

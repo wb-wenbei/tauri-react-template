@@ -1,11 +1,66 @@
 .container {
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
   border: 1px solid var(--black-50);
   border-radius: 4px;
   background: var(--black-5);
 
+  .mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
+  .control {
+    flex: 1;
+    background: var(--black-5);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 20px;
+
+    .time {
+      font-size: 24px;
+      color: rgba(123, 225, 136, 1);
+      margin: 0 12px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .action {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .timeCard {
+        background: var(--white-50);
+        font-size: 24px;
+        color: rgba(123, 225, 136, 1);
+        padding: 0 16px;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+
+      .slider {
+        flex: 1;
+
+        :global(.ant-slider-handle::after) {
+          width: 12px;
+          height: 24px;
+          border-radius: 6px;
+          inset-block-start: -7px;
+        }
+      }
+    }
+  }
 }

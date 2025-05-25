@@ -1,15 +1,16 @@
 import React from 'react'
-import styles from './index.module.css'
+import styles from './index.module.less'
 
 interface CustomButtonProps {
-  label?: string
+  children?: React.ReactNode
+  inactive?: boolean
   onClick?: () => void
 }
 
-const Button: React.FC<CustomButtonProps> = ({ label = '自动模式', onClick }) => {
+const Button: React.FC<CustomButtonProps> = ({ children = '自动模式', inactive = false, onClick }) => {
   return (
-    <button className={styles.customButton} onClick={onClick}>
-      {label}
+    <button className={`${styles.customButton} ${inactive ? styles.inactive : ''}`} onClick={onClick}>
+      {children}
     </button>
   )
 }

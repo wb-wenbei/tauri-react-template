@@ -20,7 +20,8 @@ const Toggle: React.FC<Props> = ({ defaultValue = '', value, options, onChange }
   const right = useMemo(() => options[1], [options])
 
   const handleToggle = (e: React.Key) => {
-    setCurrentValue(e)
+    if (e === currentValue) return
+    // setCurrentValue(e)
     if (onChange) onChange(e)
   }
 
@@ -33,7 +34,7 @@ const Toggle: React.FC<Props> = ({ defaultValue = '', value, options, onChange }
       <div
         className={styles.toggleSlider}
         style={{
-          transform: currentValue === 'light' ? 'translateX(0)' : 'translateX(72px)',
+          transform: currentValue === left.value ? 'translateX(0)' : 'translateX(72px)',
         }}
       ></div>
 

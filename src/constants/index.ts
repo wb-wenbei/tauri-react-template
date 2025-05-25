@@ -9,19 +9,19 @@ export const SAVED_DATA_LIST: DataItem[] = [
   {
     key: 'saved_energy',
     title: '累计节省电耗',
-    value: 46944,
+    value: 0,
     unit: 'kwh/m³',
   },
   {
     key: 'saved_chemical_medicine',
     title: '累计节省药耗',
-    value: 97,
+    value: 0,
     unit: 'mg/m³',
   },
   {
     key: 'sludge_reduction',
     title: '累计减少污泥量',
-    value: 10944,
+    value: 0,
     unit: 'kg',
   },
 ]
@@ -92,6 +92,13 @@ export const ONLINE_DATA_OTHER_LIST: DataItem[] = [
 export const SLUDEG_SIEVE: DataItem = {
   key: 'Sludge_sieve',
   title: '筛分器',
+  value: 0,
+  unit: '',
+}
+
+export const CONTROL_ADVICE: DataItem = {
+  key: 'no_data_upload',
+  title: '控制建议',
   value: 0,
   unit: '',
 }
